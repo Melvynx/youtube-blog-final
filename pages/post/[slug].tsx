@@ -9,7 +9,9 @@ export const PostPage: NextPage<{ post: Post }> = ({ post }) => {
   return (
     <Layout>
       <Link href="/">
-        <a className="text-blue-500 underline">Home</a>
+        <a className="block mt-1 text-pink-600 underline decoration-wavy decoration-pink-500 hover:opacity-75">
+          Home
+        </a>
       </Link>
       <h1 className="text-4xl text-center">{post.frontmatter.title}</h1>
       <hr />
